@@ -1,9 +1,11 @@
 <h1>First Page</h1>
 <app-login></app-login>
 
-<h1>Hi , {{ name }} ,Age: {{ Age }}</h1>
+<h1>Hi , {{ name | uppercase }} ,Age: {{ Age }}</h1>
 
 <input type="text" [value]="name" />
+<h1> {{currentDate | date:"dd/MM/YYYY"  }} </h1>
+<h1> {{756564564564.55 | currency:"USD"  }} </h1>
 <h1>{{ Twoway }}</h1>
 <input type="text" [(ngModel)]="Twoway" />
 <img [src]="source" alt="" />

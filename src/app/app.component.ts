@@ -9,6 +9,7 @@ export class AppComponent {
   colors = [' Red', 'Green', 'purple', 'Yellow', 'White', 'Black'];
   title = 'FirstAppAngularandDotNetCor';
   name = 'Abdullah Elanouz';
+  currentDate=new Date();
   Twoway = '';
   Age = 23;
   source =
