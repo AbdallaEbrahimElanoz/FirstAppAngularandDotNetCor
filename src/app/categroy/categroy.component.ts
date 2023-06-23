@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-categroy',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategroyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:MyserviceService) { }
 
   ngOnInit(): void {
+    this.service.sayHello(" categroy")
   }
 
 }

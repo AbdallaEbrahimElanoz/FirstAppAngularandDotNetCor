@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-login',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:MyserviceService) { }
 
   ngOnInit(): void {
-
+    this.service.sayHello(" login")
   }
+
 colors = [' Red', 'Green', 'purple', 'Yellow', 'White', 'Black'];
   name = 'Abdullah Elanouz';
   currentDate=new Date();
