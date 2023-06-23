@@ -4,6 +4,8 @@
 <h1>Hi , {{name}} ,Age: {{ Age  }} </h1>
 
 <input type="text" [value]="name">
+<h1>{{Twoway}}</h1>
+<input type="text" [(ngModel)]="Twoway">
 <img [src]=source alt="">
 
 <input type="button" value="Click here" (click)="myFunction()">
