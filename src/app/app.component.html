@@ -1,30 +1,37 @@
-<h1>First Page</h1>
-<app-login></app-login>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<h1>Hi , {{ name | uppercase }} ,Age: {{ Age }}</h1>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="client" href="#">client</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="article" href="#">article</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="login" href="#">login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="categroy" href="#">categroy</a>
+      </li>
 
-<input type="text" [value]="name" />
-<h1> {{currentDate | date:"dd/MM/YYYY"  }} </h1>
-<h1> {{756564564564.55 | currency:"USD"  }} </h1>
-<h1>{{ Twoway }}</h1>
-<input type="text" [(ngModel)]="Twoway" />
-<img [src]="source" alt="" />
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-<input type="button" value="Click here" (click)="myFunction()" />
 
-
-
-<select (change)="changeColor(color)" name="" id="" style="display: block">
-  <option *ngFor="let color of colors">{{ color }}</option>
-</select>
-<input type="button" [value]="logSate" (click)="toggle()" />
-<div *ngIf="isAuth; then welcome; else error"></div>
-<ng-template #welcome>
-  <p>Welcome to the page! You are logged in.</p>
-</ng-template>
-
-<ng-template #error>
-  <p>Please,login to our App</p>
-</ng-template>
-
-<router-outlet></router-outlet>
+<router-outlet> </router-outlet>

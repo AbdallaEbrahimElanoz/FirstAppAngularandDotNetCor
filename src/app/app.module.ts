@@ -5,11 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { ArticleComponent } from './article/article.component';
+import { CategroyComponent } from './categroy/categroy.component';
+import { ClientComponent } from './client/client.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ArticleComponent,
+    CategroyComponent,
+    ClientComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
