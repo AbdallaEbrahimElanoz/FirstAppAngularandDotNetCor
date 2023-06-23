@@ -6,9 +6,11 @@
 <input type="text" [value]="name">
 <img [src]=source alt="">
 
+<input type="button" value="Click here" (click)="myFunction()">
 
-
-
+<select (change)="changeColor(color)" name="" id="" style="display: block;">
+  <option *ngFor="let color of colors">{{color}}</option>
+</select>
 
 
 
