@@ -1,1 +1,21 @@
 <p>client works!</p>
+
+<form [formGroup]="myForm"  (ngSubmit)="onSubmit()">
+<div>
+  <label for="name">Name:</label><br />
+  <input type="text"  formControlName="name">
+</div>
+<div>
+  <label for="age">Age:</label><br />
+  <input type="text"  formControlName="age">
+</div>
+<div>
+  <label for="name">Address:</label><br />
+  <input type="text"  formControlName="address">
+</div>
+<div>
+  <label for="name">Job:</label><br />
+  <input type="text" formControlName="job">
+</div>
+<input type="submit" value="Send data">
+</form>
